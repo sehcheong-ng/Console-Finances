@@ -92,6 +92,7 @@ var total_month = finances.length
 
 console.log(total_month)
 
+
 // The net total amount of Profit/Losses over the entire period.
 var net_total_entire_period = 0
 for (var i = 0; i < finances.length; i++) {
@@ -99,3 +100,29 @@ for (var i = 0; i < finances.length; i++) {
 }
 
 console.log(net_total_entire_period)
+
+
+// Variables to store different results from the following for loop.
+var change = []
+var change_with_month = []
+var change_total = 0
+
+
+// Since change can only be track from second month, the index should be 1 instead of 0
+for (var i = 1; i < finances.length; i++) {
+    // Each for loop calculate the difference between a month and its previous month
+    var change_per_month = finances[i][1] - finances[i-1][1]
+
+    // Each month change is appended/pushed into the change empty array
+    change.push(change_per_month)
+
+    // Each month name and change are appended/pushed into the change_with_month empty array
+    change_with_month.push([finances[i][0], change_per_month])
+
+    // Each month change is added incrementally into change_total to obtain total change
+    change_total += change_per_month
+}
+
+console.log(change)
+console.log(change_with_month)
+console.log(change_total)
