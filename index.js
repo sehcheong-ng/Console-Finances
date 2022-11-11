@@ -91,3 +91,11 @@ var finances = [
 var total_month = finances.length
 
 console.log(total_month)
+
+// The net total amount of Profit/Losses over the entire period.
+var net_total_entire_period = 0
+for (var i = 0; i < finances.length; i++) {
+    net_total_entire_period += finances[i][1]
+}
+
+console.log(net_total_entire_period)
