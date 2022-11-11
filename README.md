@@ -1,4 +1,4 @@
-# Console-Finances
+# Console-Finances-by-SehCheong
 Using javascript to analyse a monthly profit table.
 
 This Javascript application is used to perform a financial analysis.
