@@ -90,16 +90,12 @@ var finances = [
 // The total number of months included in the dataset
 var total_month = finances.length
 
-console.log(total_month)
-
 
 // The net total amount of Profit/Losses over the entire period.
 var net_total_entire_period = 0
 for (var i = 0; i < finances.length; i++) {
     net_total_entire_period += finances[i][1]
 }
-
-console.log(net_total_entire_period)
 
 
 // Variables to store different results from the following for loop.
@@ -123,9 +119,6 @@ for (var i = 1; i < finances.length; i++) {
     change_total += change_per_month
 }
 
-console.log(change)
-console.log(change_with_month)
-console.log(change_total)
 
 // Calculate the average change and rounded to two decimal place
 var average_change = (change_total/(total_month - 1)).toFixed(2)
@@ -141,9 +134,6 @@ greatest_increase = change_with_month[greatest_increase_index]
 var greatest_decrease_index = change.indexOf(Math.min(...change))
 greatest_decrease = change_with_month[greatest_decrease_index]
 
-console.log(average_change)
-console.log(greatest_increase)
-console.log(greatest_decrease)
 
 // Save the final analysis text in a variable
 var analysis = 
