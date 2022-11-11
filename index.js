@@ -145,3 +145,18 @@ console.log(average_change)
 console.log(greatest_increase)
 console.log(greatest_decrease)
 
+// Save the final analysis text in a variable
+var analysis = 
+`Financial Analysis
+----------------------------
+Total Months: ${total_month}
+Total: $${net_total_entire_period}
+Average Change: $${average_change}
+Greatest Increase in Profits: ${greatest_increase[0]} ($${greatest_increase[1]})
+Greatest Decrease in Profits: ${greatest_decrease[0]} ($${greatest_decrease[1]})`
+
+console.log(analysis)
+
+
+// Extra work to print the analysis on both the console and page 
+document.body.innerText = analysis
