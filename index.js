@@ -126,3 +126,22 @@ for (var i = 1; i < finances.length; i++) {
 console.log(change)
 console.log(change_with_month)
 console.log(change_total)
+
+// Calculate the average change and rounded to two decimal place
+var average_change = (change_total/(total_month - 1)).toFixed(2)
+
+// To get the index of the Greatest Increase in Profits from change array
+// Use the index to get the month and change
+var greatest_increase_index = change.indexOf(Math.max(...change))
+greatest_increase = change_with_month[greatest_increase_index]
+
+
+// To get the index of the Greatest Decrease in Profits from change array
+// Use the index to get the month and change
+var greatest_decrease_index = change.indexOf(Math.min(...change))
+greatest_decrease = change_with_month[greatest_decrease_index]
+
+console.log(average_change)
+console.log(greatest_increase)
+console.log(greatest_decrease)
+
