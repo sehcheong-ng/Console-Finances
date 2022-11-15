@@ -3,6 +3,9 @@ Using javascript to analyse a monthly profit table.
 
 This Javascript application is used to perform a financial analysis.
 
+App link : https://sehcheong-ng.github.io/Console-Finances-by-SehCheong/
+
+
 The dataset is the monthly Profit/Losses of a company between the period of Jan-2010 and Feb-2017 (A total of 86 months).
 
 The stakeholder wishes to understand the financial situation of this company with the calculation below:
